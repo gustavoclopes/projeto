@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+*{
+    margin: 0px;
+    position: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --cor00: #a54de862;
+    --cor01: #A54DE8;
+    --cor02: #9C48DB;
+    --cor03: #8A40C2;
+    --cor04: #6E339C;
+    --cor05: #411E5C;
+    --cor-shadow: rgba(0, 0, 0, 0.445);
+    --cor-white: rgba(255, 255, 255, 0.527);
+    --cor-glifo-white: rgba(255, 255, 255, 0.726);
+    --font-handwriting01: 'Comforter', cursive;
+    --font-handwriting02: 'Dancing Script', cursive;
+    --font-handwriting03: 'Short Stack', cursive;
+
+}
+body{
+    background-image:linear-gradient(to left, var(--cor00), var(--cor01));
+}
+header .imagem-logo{
+    margin: 10px;
+}
+header .cabecalho-marca{
+    text-align: center;
+    margin: auto;
+    padding-right: 10px;
+}
+header{
+    display: flex;
+    background-image:linear-gradient(to top, var(--cor05), var(--cor04));
+    padding: 10px;
+}
+header h1{
+    font-family: var(--font-handwriting01);
+    font-size: 2em;
+    letter-spacing: 9px;
+    text-shadow: -1px 1px 2px var(--cor-shadow);
+    color: var(--cor-glifo-white);
+}
+header p{
+    font-family: var(--font-handwriting02);
+    font-size: 1em;
+    letter-spacing: 5px;
+    text-shadow: -1px 1px 2px var(--cor-shadow);
+    color: var(--cor-glifo-white);
+}
+nav{
+    padding: 10px;
+    background-color: var(--cor05);
+    box-shadow: 0px 4px 4px var(--cor-shadow);
+}
+nav a{
+    font-family: var(--font-handwriting03);
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor-glifo-white);
+    text-shadow: 0px 0px 2px var(--cor-shadow);
+}
+nav a:hover{
+    font-weight: bold;
+    padding: 10px;
+    color: var(--cor05);
+    background-color: var(--cor-white);
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px var(--cor-shadow);
+    transition: 0.5s;
+}
+main{
+    padding: 0px 20px 20px 20px;
+}
+main article{
+    padding: 20px;
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    background-color: var(--cor-white);
+    border-radius: 0px 0px 10px 10px;
+    border: 2px var(--cor05);
+    box-shadow: 0px 0px 6px var(--cor-shadow);
+}
+article p{
+    font-family: var(--font-handwriting03);
+    text-align: justify;
+    padding: 10px 0px;
+    line-height: 30px;
+}
+article h1{
+    font-size: 2em;
+}
+article h1, h2{
+    font-family: var(--font-handwriting03);
+    padding: 10px 0px;
+    color: var(--cor05);
+}
+article p{
+    text-indent: 30px;
+    color: var(--cor05);
+}
+main img{
+    width: 100%;
+    margin: auto;
+    box-shadow: 2px 2px 4px var(--cor-shadow);
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+aside{
+    margin: 15px 10px;
+    padding: 20px;
+    background-color: var(--cor03);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--cor-shadow);
+}
+aside h2{
+    font-family: var(--font-handwriting03);
+    margin: -20px -20px 10px -20px;
+    padding: 10px 20px;
+    color: var(--cor-glifo-white);
+    background-color: var(--cor05);
+    border-radius: 10px 10px 0px 0px;
+}
+aside ul{
+    list-style: none;
+    font-family: var(--font-handwriting03);
+    color: var(--cor-glifo-white);
+    columns: 2;
+}
+aside p{
+    color: var(--cor-glifo-white);
+}
+.img-dancarina{
+    max-width: 35%;
+    min-width: 130px;
+    box-shadow: none;
+    margin: auto;
+    display: block;
+}
+.img-background{
+    margin: 15px -20px;
+    padding: 20px;
+    background-color: var(--cor04);
+    box-shadow: inset 0px 0px 8px var(--cor-shadow);
+}
+.video{
+    background-color: var(--cor04);
+    box-shadow: inset 0px 0px 10px var(--cor-shadow);
+    margin: 15px -20px;
+    padding-bottom: 60%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    /*
+    Quando utilizo absolute posso modificar:
+    top, left, Width e height
+    */
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0px 0px 10px var(--cor-shadow);
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--cor05);
+}
+footer > p{
+    font-family: var(--font-handwriting03);
+    text-shadow: -1px 1px 3px var(--cor-shadow);
+    color: var(--cor-glifo-white);
+}
