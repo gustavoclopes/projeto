@@ -58,17 +58,25 @@ header p{
     color: var(--cor-glifo-white);
 }
 nav{
+    display: flex;
+    align-items: center;
     padding: 10px;
     background-color: var(--cor05);
     box-shadow: 0px 4px 4px var(--cor-shadow);
 }
 nav a{
+    display: flex;
+    align-items: center;
     font-family: var(--font-handwriting03);
     font-weight: bold;
     padding: 10px;
     text-decoration: none;
     color: var(--cor-glifo-white);
     text-shadow: 0px 0px 2px var(--cor-shadow);
+}
+nav .material-icons{
+    font-size: 20px;
+    padding-right: 3px;
 }
 nav a:hover{
     font-weight: bold;
